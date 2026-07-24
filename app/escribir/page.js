@@ -94,7 +94,7 @@ export default function Escribir() {
 
       <section className="relative min-h-screen overflow-hidden bg-[#21170f] px-5 pb-10 pt-28 md:px-10 md:pt-30">
         <Image
-          src="/images/sala-escritura.png"
+          src="/images/sala-escritura.webp"
           alt=""
           fill
           className="object-cover"

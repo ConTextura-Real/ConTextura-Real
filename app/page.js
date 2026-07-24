@@ -55,7 +55,7 @@ export default function Home() {
             <div className="absolute -left-5 top-8 h-36 w-36 rounded-full bg-[#E8C985]/40 blur-3xl" />
             <div className="relative overflow-hidden rounded-2xl border border-white/70 bg-[#FFF8EE] shadow-2xl shadow-[#21170f]/10">
               <Image
-                src="/images/abogada.png"
+                src="/images/abogada.webp"
                 alt="Mujer abogada de Con-Textura Real"
                 width={600}
                 height={700}

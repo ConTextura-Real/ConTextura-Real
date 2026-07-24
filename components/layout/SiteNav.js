@@ -16,7 +16,7 @@ export default function SiteNav({ tone = "light", action = null }) {
       >
         <Link href="/" className="flex min-w-0 items-center gap-3">
           <Image
-            src="/logo-nav.png"
+            src="/logo-nav.webp"
             alt=""
             width={40}
             height={40}
