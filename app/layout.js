@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Con-Textura Real",
+  title: "ConTextura Real",
   description:
     "Mujer, derecho y fe en un espacio de escritura, oración y reflexión sobre la vida real.",
   icons: {

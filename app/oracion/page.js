@@ -1,6 +1,7 @@
 import SiteNav from "@/components/layout/SiteNav";
 import Footer from "@/components/layout/Footer";
 import PrayerForm from "@/components/PrayerForm";
+import Reveal from "@/components/ui/Reveal";
 
 export default function Oracion() {
   return (
@@ -9,7 +10,7 @@ export default function Oracion() {
 
       <section className="px-5 pb-16 pt-28 md:px-8 md:pb-20 md:pt-32">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.84fr_1fr] md:items-start">
-          <div>
+          <Reveal as="div">
             <p className="mb-4 text-xs font-bold uppercase tracking-[0.28em] text-[#9B6B2D]">
               Oración
             </p>
@@ -20,9 +21,9 @@ export default function Oracion() {
               Este es un espacio de confianza y esperanza. Puedes compartir tu
               intención de oración y será recibida con respeto.
             </p>
-          </div>
+          </Reveal>
 
-          <PrayerForm />
+          <Reveal><PrayerForm /></Reveal>
         </div>
       </section>
 

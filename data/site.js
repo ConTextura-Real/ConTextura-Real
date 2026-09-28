@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Con-Textura Real",
+  name: "ConTextura Real",
   tagline: "Porque la vida tiene textura.",
   email: "contexturareal@gmail.com",
   nav: [

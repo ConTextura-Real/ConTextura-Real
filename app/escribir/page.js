@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 import SiteNav from "@/components/layout/SiteNav";
 import Button from "@/components/ui/Button";
 import { TextArea, TextInput } from "@/components/ui/FormField";
+import Reveal from "@/components/ui/Reveal";
 
 export default function Escribir() {
   const [nombre, setNombre] = useState("");
@@ -63,7 +64,7 @@ export default function Escribir() {
 
   return (
     <main className="min-h-screen bg-[#21170f] text-white">
-      <audio ref={audioRef} loop src="/audio/sala-tranquila.aac" />
+      <audio ref={audioRef} loop src="/audio/audio_escribir.mp3" />
       <SiteNav
         tone="dark"
         action={
@@ -105,7 +106,7 @@ export default function Escribir() {
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(44,27,14,0.22),rgba(44,27,14,0.06)_42%,rgba(44,27,14,0.42))]" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(35,22,12,0.18),transparent_25%,transparent_75%,rgba(35,22,12,0.18))]" />
 
-        <div className="relative z-20 mx-auto max-w-5xl text-center">
+        <Reveal as="div" className="relative z-20 mx-auto max-w-5xl text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.28em] text-[#E8C985] md:text-sm">
             Sala virtual de escritura
           </p>
@@ -117,9 +118,9 @@ export default function Escribir() {
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-white/90 md:text-2xl">
             Entra con calma. Mira alrededor. Escribe lo que necesitas soltar.
           </p>
-        </div>
+        </Reveal>
 
-        <section className="relative z-20 mx-auto mt-10 w-full max-w-xl rounded-2xl border border-white/55 bg-[#FFF8EE]/92 p-6 text-[#292436] shadow-2xl backdrop-blur-xl md:mt-12 md:p-8 lg:mt-14">
+        <Reveal as="section" className="relative z-20 mx-auto mt-10 w-full max-w-xl rounded-2xl border border-white/55 bg-[#FFF8EE]/92 p-6 text-[#292436] shadow-2xl backdrop-blur-xl md:mt-12 md:p-8 lg:mt-14">
           <div className="mb-6">
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#9B6B2D]">
               Comparte tu historia
@@ -159,7 +160,7 @@ export default function Escribir() {
           </div>
 
           <div className="mt-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <p className="text-xs leading-6 text-[#696168]">
+            <p className="text-xm leading-6 text-[#696168]">
               Tu mensaje será recibido con respeto, calma y cuidado.
             </p>
 
@@ -171,7 +172,7 @@ export default function Escribir() {
               {enviando ? "Enviando..." : "Compartir mi mensaje"}
             </Button>
           </div>
-        </section>
+        </Reveal>
       </section>
     </main>
   );
